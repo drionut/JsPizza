@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="./js/script.js" defer></script>
+        <title>Eat a slice!</title>
+    </head>
+    <body>
+        <main>
+            <h1 id="logo">Take a Slice!</h1>
+            <section id="slices-container">
+                <div class="titles">
+
+                    <h2></h2>
+                </div>
+                
+                
+                <div id="slices">
+                    <article class="slice">
+                        <img src="./assets/half-and-half.jpg" alt="half & half" />
+                        <h3>Half & Half</h3>
+                        <p>Customise each side of your pizza with any recipe you like.</p>
+                    </article>
+                    <article class="slice">
+                        <img src="./assets/cyo.jpg" alt="create your own" />
+                        <h3>Create Your Own</h3>
+                        <p>Go Freestyle. Simply choose your sauce and add any toppings.</p>
+                    </article>
+                    <article class="slice">
+                        <img src="./assets/take-four.jpg" alt="any 4 toppings free" />
+                        <h3>Any 4 Toppings FREE</h3>
+                        <p>
+                            Recreate your favourite pizza with our all new Take 4. Choose up to 4 toppings for FREE to
+                            create your masterpice.
+                        </p>
+                    </article>
+                    <article class="slice">
+                        <img src="./assets/kfc-popcorn-chicken-pizza.jpg" alt="popcorn chicken pizza" />
+                        <h3>KFC Popcorn Chicken Pizza</h3>
+                        <p>Mozzarella cheese, KFC Popcorn Chicken & Sweetcorn on a KFC gravy base.</p>
+                        <div class="select-size-dropdown">
+                            <h4>Select your size</h4>
+                            <select name="cars" class="select-size">
+                                <option value="large-classic" selected>Large Classic</option>
+                                <option value="medium-classic">Medium Classic</option>
+                                <option value="small-classic">Small Classic</option>
+                            </select>
+                            <button class="addButton">
+                                Add
+                                <span class="price">£19.99</span>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="slice">
+                        <img src="./assets/chicken-fajita.jpg" alt="chicken fajita pizza" />
+                        <h3>Chicken Fajita Pizza with Jalapenos</h3>
+                        <p>Like it HOT? Fajita Chicken, with roasted peppers & onions, triple cheese blend and jalapenos.</p>
+                        <div class="select-size-dropdown">
+                            <h4>Select your size & crust</h4>
+                            <select name="cars" class="select-size">
+                                <option value="large-classic" selected>Large Classic</option>
+                                <option value="large-stuffed-crust">Large Stuffed Crust</option>
+                                <option value="medium-classic">Medium Classic</option>
+                                <option value="medium-classic-no-garlic">Medium Classic no-Garlic</option>
+                                <option value="small-classic">Small Classic</option>
+                                <option value="small-gluten-free">Small Classic Gluten Free</option>
+                            </select>
+                            <button class="addButton">
+                                Add
+                                <span class="price">£19.99</span>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <aside id="basket">
+                <h2>Your Basket</h2>
+                <p>Your basket looks a little empty.Start adding some slices!</p>
+
+                <section class="place-order-section">
+                    <h3 class="notice">Minimum spend for delivery is £11.99</h3>
+                    <button id='checkout'>Checkout</button>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>

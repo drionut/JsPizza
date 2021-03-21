@@ -1,0 +1,123 @@
+/* general styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: url("../assets/bg.jpg");
+    font-family: Open Sans, system-ui, BlinkMacSystemFont, Helvetica Neue, Helvetica, sans-serif;
+}
+
+/* END general */
+
+/* main container */
+main {
+    top: 0;
+}
+#logo {
+    text-align: center;
+}
+/* END main  */
+
+/* slices container */
+#slices-container {
+    margin: 0 400px 0 0;
+}
+.titles {
+    background: white;
+    border: 1px solid rgb(238, 237, 239);
+    box-shadow: rgba(0, 0, 0, 0.6) 0 1px 1px -1px;
+    width: 100vw;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    font-size: 14px;
+}
+
+#slices {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 1000px;
+    margin: auto;
+}
+
+.slice {
+    align-self: stretch;
+    border: 1px solid #eeedef;
+    box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.6);
+    background: #fff;
+    width: 300px;
+    /* margin-bottom: 30px; */
+    margin: 0 10px 30px 10px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+/* product titles and paragraphs */
+.slice > .select-size-dropdown,
+h3,
+p {
+    padding: 0 10px 10px;
+}
+.slice > h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.slice > p {
+    color: rgba(107, 110, 121, 0.8);
+}
+.slice:hover {
+    box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.8);
+}
+/* END slices */
+
+/* basket container */
+#basket {
+    position: fixed;
+    width: 350px;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    background: white;
+}
+#basket > h2 {
+    text-align: center;
+}
+
+.notice,
+.checkout {
+    bottom: 0;
+}
+/* END basket */
+
+/* responsiveness */
+@media (max-width: 1880px) {
+    #slices {
+        grid-template-columns: repeat(3, 1fr);
+        width: 850;
+        margin: auto;
+    }
+}
+@media (max-width: 1350px) {
+    #slices {
+        grid-template-columns: repeat(2, 1fr);
+        width: 680;
+    }
+    #slices-container {
+        margin: 0 300px 0 0;
+    }
+}
+@media (max-width: 1180px) {
+    #slices {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #slices-container {
+        margin: auto;
+    }
+}
+@media (max-width: 720px) {
+    #slices-container {
+        width: 100%;
+    }
+    #basket {
+        display: none;
+    }
+}
